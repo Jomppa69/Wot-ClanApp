@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../enviroments/enviroment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ItemService {
-  private backendUrl = 'http://localhost:3000'
+  private backendUrl = environment.backendUrl;
   constructor(private http: HttpClient) {}
 
   getItems(): Observable<string[]> {
