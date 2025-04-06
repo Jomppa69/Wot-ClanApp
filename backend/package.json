@@ -1,0 +1,22 @@
+{
+  "name": "wot_app-backend",
+  "version": "0.0.1",
+  "description": "Backend for World of Tanks clant management app",
+  "license": "ISC",
+  "author": "Jomppa69",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon app.ts"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,12 @@
+<div>
+    <div>
+        <button (click)="clickHandler()">Show items</button>
+    </div>
+    @if (showItems) {
+        <ul>
+            <li *ngFor="let item of items">{{item}}</li>
+        </ul>
+    } @else {
+        <p>Button not clicked</p>
+    }
+</div>
